@@ -7,15 +7,15 @@
   $word = $_GET['word'];
 
   $user_modified_text = str_replace( $word, '***', $original_text ); 
-  $user_text_lenght = strlen( $text_user );
+  $user_text_length = strlen( $user_modified_text );
 
-  echo $original_text;
-  echo $text_lenght;
+  // echo $original_text;
+  // echo $text_length;
 
-  echo $modified_text;
+  // echo $modified_text;
   
-  echo $user_modified_text;
-  echo $user_text_lenght;
+  // echo $user_modified_text;
+  // echo $user_text_lenght;
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +27,12 @@
     <title>php-badwords</title>
 </head>
 <body>
-    
+    <h3><?php echo $original_text ?></h3>
+    <p>Lunghezza testo:<?php echo $text_length ?></p>
+
+    <h3>Parola censurata "cacca":<?php echo $modified_text ?></h3>
+
+    <h3>Parola da censurare nell'url:<?php echo $user_modified_text ?></h3>
+    <p>Lunghezza testo:<?php echo $user_text_length ?></p>
 </body>
 </html>
