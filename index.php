@@ -1,3 +1,7 @@
+<?php 
+  $original_text = 'Esempio di testo di cacca con frasi di cacca e senza una logica di cacca, ma che comunque risulta cacca';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
