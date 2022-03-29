@@ -3,6 +3,11 @@
 
   $text_length = strlen( $original_text );
   $modified_text = str_replace( 'cacca', '***', $original_text );
+
+  $word = $_GET['word'];
+  
+  $user_modified_text = str_replace( $word, '***', $original_text ); 
+  $user_text_lenght = strlen( $text_user )
 ?>
 
 <!DOCTYPE html>
