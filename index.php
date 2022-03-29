@@ -1,5 +1,8 @@
 <?php 
   $original_text = 'Esempio di testo di cacca con frasi di cacca e senza una logica di cacca, ma che comunque risulta cacca';
+
+  $text_length = strlen( $original_text );
+  $modified_text = str_replace( 'cacca', '***', $original_text );
 ?>
 
 <!DOCTYPE html>
